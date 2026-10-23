@@ -1,0 +1,30 @@
+body{
+    background-color:rgb(247, 211, 217)
+}
+
+.circulito{
+    background-color:rgb(53, 153, 49);
+    width:100px;
+    height: 100px;
+    border-radius:50%;
+    padding:20px;
+    animation-name:movercirculo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movercirculo{
+    0%{
+        transform: translate(0px,0px);
+        background-color: darkorange;}
+
+    25% {transform: translate(200px,0px);
+        background-color: palevioletred;}
+
+    50% {
+        transform: translate(100px,50px);
+        background-color:lightseagreen}
+}
+
